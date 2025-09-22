@@ -1,93 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gobierno del Dato - MINSUR</title>
+  <meta name="description" content="Repositorio de documentos oficiales del programa de Gobierno del Dato de MINSUR." />
   <style>
+    :root {
+      --bg: #f4f4f4;
+      --text: #333;
+      --brand: #005288;
+      --accent: #0077b6;
+      --card: #ffffff;
+      --border: #ddd;
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
     }
-    h1 {
-      color: #005288;
+    header, main, footer {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 20px;
     }
-    h2 {
-      color: #0077b6;
-    }
+    header p { margin: 0; }
+    h1 { color: var(--brand); margin: 16px 0 8px; }
+    h2 { color: var(--accent); margin: 0 0 8px; font-size: 1.1rem; }
+    p { margin: 0 0 10px; }
     a {
-      color: #0077b6;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 600;
     }
-    a:hover {
-      text-decoration: underline;
+    a:hover { text-decoration: underline; }
+    a:focus-visible {
+      outline: 3px solid #94d2ff;
+      outline-offset: 2px;
+      border-radius: 4px;
     }
     .documento {
-      margin-bottom: 30px;
-      padding: 15px;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 16px;
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
     }
+    .meta { color: #555; font-size: 0.95rem; }
+    hr {
+      border: none;
+      height: 1px;
+      background: #e7e7e7;
+      margin: 24px 0;
+    }
+    .emoji { margin-right: 6px; }
+    footer p { color: #666; font-size: 0.9rem; margin: 0; }
   </style>
 </head>
 <body>
 
-  <h1>Gobierno del Dato - MINSUR</h1>
-  <p>Repositorio de documentos oficiales del programa de Gobierno del Dato.</p>
+  <header>
+    <h1>Gobierno del Dato - MINSUR</h1>
+    <p>Repositorio de documentos oficiales del programa de Gobierno del Dato.</p>
+  </header>
 
-  <div class="documento">
-    <h2>📘 Política Corporativa de Seguridad de Datos</h2>
-    <p><strong>Código:</strong> DG-POL-PCSD-MINS-001<br>
-       <strong>Versión:</strong> 1.0</p>
-    <p><a href="DG-POL-PCSD-MINS-001-Política%20Corporativo%20de%20Seguridad%20de%20Datos%20v1.0.docx" Descargar documento /a></p>
-  </div>
+  <main>
+    <div class="documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Política Corporativa de Seguridad de Datos</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-POL-PCSD-MINS-001<br>
+        <strong>Versión:</strong> 1.0
+      </p>
+      <p>
+        <a href="DG-POL-PCSD-MINS-001-Política%20Corporativo%20de%20Seguridad%20de%20Datos%20v1.0.docx"
+           download
+           title   </p>
+    </div>
 
-  <div class="documento">
-    <h2>📘 Política Corporativa de Calidad de Datos</h2>
-    <p><strong>Código:</strong> DG-POL-PCCD-MINS-001<br>
-       <strong>Versión:</strong> 2.0</p>
-    <p><a href="DG-POL-PCCD-MINS-001-Política%20Corporativo%20de%20Calidad%20de%20Datos%20v2.0.docx" Descargar documento /a></p>
-  </div>
+    <div class="documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Política Corporativa de Calidad de Datos</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-POL-PCCD-MINS-001<br>
+        <strong>Versión:</strong> 2.0
+      </p>
+      <p>
+        <a href="DG-POL-PCCD-MINS-001-Política%20Corporativo%20de%20Calidad%20de%20Datos%20v2.0.docx"
+          documento
+        </a>
+      </p>
+    </div>
 
-  <div class="documento">
-    <h2>📘 Política Corporativa de Arquitectura y Metadata Analítica</h2>
-    <p><strong>Código:</strong> DG-POL-PCAMA-MINS-001<br>
-       <strong>Versión:</strong> 1.0</p>
-    <p><a href="DG-POL-PCAMA-MINS-001-Política%20Corporativo%20de%20Arquitectura%20y%20Metadata%20Analítica%20(Datalake,%20Deltalake,%20UnityCatalog,%20Metadata%20driven)%20v1.0.docx" Descargar documento /a></p>
-  </div>
+    <div class="documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Política Corporativa de Arquitectura y Metadata Analítica</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-POL-PCAMA-MINS-001<br>
+        <strong>Versión:</strong> 1.0
+      </p>
+      <p>
+        <a href="DG-POL-PCAMA-MINS-001-Política%20Corporativo%20de%20Arquitectura%20y%20Metadata%20Analítica%20(Datalake,%20Deltalake,%20UnityCatalog,%20Metadata%20driven)%20v1.0.docx"
+           download
+          a>
+      </p>
+    </div>
 
-  <div class="documento">
-    <h2>📘 Procedimiento para Configurar Metadata Driven</h2>
-    <p><strong>Código:</strong> DG-PRO-PCMD-MINS-001<br>
-       <strong>Versión:</strong> 1.0</p>
-       <p><a></a> href="DG-PRO-PCMD-MINS-001-Procedimiento%20para%20Configurar%20Metadata%20Driven%20v1.0.docx" Descargar documento </a></p>
-  </div>
+    <div class="documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento para Configurar Metadata Driven</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-PRO-PCMD-MINS-001<br>
+        <strong>Versión:</strong> 1.0
+      </p>
+      <p>
+        <a href="DG-PRO-PCMD-MINS-001-Procedimiento%20para%20Configurar%20Metadata%20Driven%20v1.0.docx"
+           download
+           title="Descargar DG-PRO-PCMD-MINS-001 v1"documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento para Solicitar Accesos a Unity Catalog</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-PRO-PAUC<br>
+        <strong>Versión:</strong> 1.0
+      </p>
+      <p>
+        <a href="DG-PRO-PAUC-Procedimiento%20para%20Solicitar%20Accesosity%20Catalog%20v1.0.docx"
+           download
+           title="Descargar DG-PRO-PAUC v  <div class="documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento Corporativo de Remediación de Datos</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-PRO-PCRD-MINS-001<br>
+        <strong>Versión:</strong> 1.0
+      </p>
+      <p>
+        <a href="DG-PRO-PCRD-MINS-001-Procedimiento%20Corporativo%20de%20Remediación%20de%20Datos%20v1.0.docx"
+           download
+          a>
+      </p>
+    </div>
 
-  <div class="documento">
-    <h2>📘 Procedimiento para Solicitar Accesos a Unity Catalog</h2>
-    <p><strong>Código:</strong> DG-PRO-PAUC<br>
-       <strong>Versión:</strong> 1.0</p>
-    <p><a href="DG-PRO-PAUC-Procedimiento%20para%20Solicitar%20Accesosity%20Catalog%20v1.0.docx"📄 Descargar documento /a></p>
-  </div>
+    <div class="documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento para Transferencia de Propiedad en Unity Catalog</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-PPRO-TPUC<br>
+        <strong>Versión:</strong> 1.0
+      </p>
+      <p>
+        <a href="DG-PPRO-TPUC-Procedimiento%20para%20Transferencia%20de%20Propiedad%20en%20Unity%20Catalog%20v1.0.docx"
+          download
+          title="Descargar DG-PPRO-TPUC v1.0>
+    <p>Este sitio puede ser referenciado como fuente de conocimiento en agentes de Copilot Studio.</p>
+  </main>
 
-  <div class="documento">
-    <h2>📘 Procedimiento Corporativo de Remediación de Datos</h2>
-    <p><strong>Código:</strong> DG-PRO-PCRD-MINS-001<br>
-       <strong>Versión:</strong> 1.0</p>
-    <p><a href="DG-PRO-PCRD-MINS-001-Procedimiento%20Corporativo%20de%20Remediación%20de%20Datos%20v1.0.docx" Descargar documento /a></p>
-  </div>
-
-  <div class="documento">
-    <h2>📘 Procedimiento para Transferencia de Propiedad en Unity Catalog</h2>
-    <p><strong>Código:</strong> DG-PPRO-TPUC<br>
-       <strong>Versión:</strong> 1.0</p>
-    <p><a href="DG-PPRO-TPUC-Procedimiento%20para%20Transferencia%20de%20Propiedad%20en%20Unity%20Catalog%20v1.0.docx" Descargar documento /a></p>
-  </div>
-
-  <hr>
-  <p>Este sitio puede ser referenciado como fuente de conocimiento en agentes de Copilot Studio.</p>
+  <footer>
+    <p>© MINSUR — Gobierno del Dato</p>
+  </footer>
 
 </body>
 </html>
