@@ -60,6 +60,11 @@
     }
     .emoji { margin-right: 6px; }
     footer p { color: #666; font-size: 0.9rem; margin: 0; }
+    .summary-content {
+      border-left: 3px solid #0077b6;
+      padding-left: 15px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -70,101 +75,92 @@
   </header>
 
   <main>
+    <section id="conocimiento-chatbot">
+      <p>A continuación se presentan los resúmenes de las políticas y procedimientos clave de Gobierno del Dato, diseñados para ser indexados por el agente de Copilot.</p>
+    </section>
+
+    <!-- Documento 1: Política Corporativa de Seguridad de Datos -->
     <div class="documento">
       <h2><span class="emoji" aria-hidden="true">📘</span>Política Corporativa de Seguridad de Datos</h2>
       <p class="meta">
         <strong>Código:</strong> DG-POL-PCSD-MINS-001<br>
         <strong>Versión:</strong> 1.0
       </p>
-      <p>
-       <div class = "acciones">
-        <a href = "politica-corporativa-seguridad-del-dato-dg-pol-pcsd-mins-001-v1-0.md"> 🔎 Ver resumen</a>
-        <a href="DG-POL-PCSD-MINS-001-Política%20Corporativo%20de%20Seguridad%20de%20Datos%20v1.0.docx">
-           download documento
-        </a>  
-       </div>
-       </p>
+      <div class="summary-content">
+        <p>El objetivo de esta política es establecer los principios y lineamientos para garantizar la **confidencialidad, integridad, disponibilidad y trazabilidad** de los datos corporativos, asegurando su protección contra accesos no autorizados, pérdida, corrupción o divulgación indebida. Aplica a toda la información, áreas, filiales y operaciones. Sus principios fundamentales incluyen: la Confidencialidad (acceso solo a autorizados bajo mínimo privilegio), Integridad (datos completos, consistentes y sin alteraciones), Disponibilidad (accesibilidad cuando se requiere), Trazabilidad (registro auditable de toda acción), y Cumplimiento Normativo (alineación a regulaciones aplicables). Los lineamientos generales requieren que todo acceso a datos sea gestionado a través de un proceso formal de autorización que incluye validación funcional y de seguridad, la clasificación de datos según niveles de seguridad (Confidencial, Interna, Pública), el uso de cifrado para transmisión y almacenamiento de datos sensibles, y la implementación de controles de monitoreo y auditoría.</p>
+      </div>
     </div>
 
+    <!-- Documento 2: Política Corporativa de Calidad de Datos -->
     <div class="documento">
       <h2><span class="emoji" aria-hidden="true">📘</span>Política Corporativa de Calidad de Datos</h2>
       <p class="meta">
         <strong>Código:</strong> DG-POL-PCCD-MINS-001<br>
         <strong>Versión:</strong> 2.0
       </p>
-      <p>
-       <div class = "acciones">
-        <a href = "politica-corporativa-calidad-del-dato-dg-pol-pccd-mins-001-v2-0.md"> 🔎 Ver resumen (Markdown) </a>
-        <a href="DG-POL-PCCD-MINS-001-Política%20Corporativo%20de%20Calidad%20de%20Datos%20v2.0.docx">
-          download documento
-        </a>
-       </div>
-      </p>
+      <div class="summary-content">
+        <p>Esta política tiene como objetivo establecer los principios, lineamientos y responsabilidades para asegurar la **calidad de los datos corporativos**, garantizando su integridad, precisión, completitud, consistencia y confiabilidad a lo largo de su ciclo de vida. Esto se hace para apoyar la toma de decisiones, el cumplimiento normativo y la eficiencia operativa. La política aplica a todos los datos críticos del negocio, todos los procesos del ciclo operativo y todos los sistemas de información, incluyendo plataformas de analítica y data lakes. Las **dimensiones clave de calidad** que se monitorean son: **Precisión**, **Completitud**, **Consistencia**, **Trazabilidad**, **Actualización Oportuna**, y **Validez**. La política establece un **Proceso de Remediación de Datos** que incluye las etapas de Identificación, Análisis de Causa Raíz, Corrección, Validación y Registro, con roles específicos como el Dueño del Dato y el Analista de Gobierno del Dato.</p>
+      </div>
     </div>
 
+    <!-- Documento 3: Política Corporativa de Arquitectura y Metadata Analítica -->
     <div class="documento">
       <h2><span class="emoji" aria-hidden="true">📘</span>Política Corporativa de Arquitectura y Metadata Analítica</h2>
       <p class="meta">
         <strong>Código:</strong> DG-POL-PCAMA-MINS-001<br>
         <strong>Versión:</strong> 1.0
       </p>
-      <p>
-        <a href="DG-POL-PCAMA-MINS-001-Política%20Corporativo%20de%20Arquitectura%20y%20Metadata%20Analítica%20(Datalake,%20Deltalake,%20UnityCatalog,%20Metadata%20driven)%20v1.0.docx">
-           download documento
-        </a> 
-      </p>
+      <div class="summary-content">
+        <p>Esta política establece los lineamientos para la implementación y uso de la **arquitectura analítica corporativa**, basada en **Data Lake, Delta Lake, Unity Catalog** y un enfoque **Metadata-Driven**. Su objetivo es garantizar que la información sea confiable, segura, trazable y explotable para potenciar la analítica avanzada, inteligencia de negocio y ciencia de datos. El componente clave de la arquitectura es el **Esquema Medallón Corporativo**, que organiza los datos en capas: **Bronce** (datos crudos), **Silver** (datos procesados), y **Gold** (datos depurados y listos para consumo). Establece que **Unity Catalog** debe ser el catálogo centralizado para la gestión de permisos, trazabilidad y clasificación de datos, y que todos los procesos analíticos deben sustentarse en **metadatos** para asegurar el linaje de datos.</p>
+      </div>
     </div>
 
-    <div class="documento">
-      <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento para Configurar Metadata Driven</h2>
-      <p class="meta">
-        <strong>Código:</strong> DG-PRO-PCMD-MINS-001<br>
-        <strong>Versión:</strong> 1.0
-      </p>
-      <p>
-        <a href="DG-PRO-PCMD-MINS-001-Procedimiento%20para%20Configurar%20Metadata%20Driven%20v1.0.docx">
-           download documento
-        </a>
-      </p>
-    </div>
-
+    <!-- Documento 4: Procedimiento para Solicitar Accesos a Unity Catalog -->
     <div class="documento">
       <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento para Solicitar Accesos a Unity Catalog</h2>
       <p class="meta">
         <strong>Código:</strong> DG-PRO-PAUC<br>
         <strong>Versión:</strong> 1.0
       </p>
-      <p>
-        <a href="DG-PRO-PAUC-Procedimiento%20para%20Solicitar%20Accesosity%20Catalog%20v1.0.docx">
-           download documento
-        </a>
-      </p>
+      <div class="summary-content">
+        <p>Este procedimiento define el proceso estandarizado para la **solicitud, evaluación, aprobación y configuración de accesos** a recursos de datos dentro de **Unity Catalog**. El fin es asegurar el control, la trazabilidad y el cumplimiento de los lineamientos de seguridad y gobierno del dato en la organización. El procedimiento aplica a todos los proyectos de Analítica Avanzada que requieran habilitar accesos en Unity Catalog. El flujo de atención incluye las etapas de solicitud por parte del **Solicitante**, derivación al equipo de **Gobierno del Dato**, validación funcional por el **Administrador de la Plataforma de Datos**, autorización de **Seguridad de la Información**, asignación de permisos, y notificación al solicitante. Se enfatiza en las **Consideraciones de Seguridad**, como la revisión trimestral de accesos y la revocación inmediata cuando un usuario cambia de rol.</p>
+      </div>
     </div>
-    
+
+    <!-- Documento 5: Procedimiento para Configurar Metadata Driven -->
+    <div class="documento">
+      <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento para Configurar Metadata Driven</h2>
+      <p class="meta">
+        <strong>Código:</strong> DG-PRO-PCMD-MINS-001<br>
+        <strong>Versión:</strong> 1.0
+      </p>
+      <div class="summary-content">
+        <p>Este documento detalla los pasos secuenciales y las responsabilidades para la configuración, documentación y mantenimiento de la **metadata** bajo el enfoque **"Metadata Driven"**. Su objetivo es asegurar que los metadatos dirijan y automaticen los flujos de trabajo de datos, mejorando la trazabilidad y la eficiencia operativa. El procedimiento aplica a todas las ingestas de datos que aterrizan en el Data Lake. Se describen los roles clave como el **Gestor Data TI**, el **Analista de Diseño del Dato**, el **Data Steward** y el **Usuario de Negocio**, y se detalla el flujo para configurar y modificar los parámetros del metadata driven.</p>
+      </div>
+    </div>
+
+    <!-- Documento 6: Procedimiento Corporativo de Remediación de Datos -->
     <div class="documento">
       <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento Corporativo de Remediación de Datos</h2>
       <p class="meta">
         <strong>Código:</strong> DG-PRO-PCRD-MINS-001<br>
         <strong>Versión:</strong> 1.0
       </p>
-      <p>
-        <a href="DG-PRO-PCRD-MINS-001-Procedimiento%20Corporativo%20de%20Remediación%20de%20Datos%20v1.0.docx">
-           download documento
-        </a>
-      </p>
+      <div class="summary-content">
+        <p>Establece la metodología estandarizada para **identificar, diagnosticar y corregir problemas de calidad de datos** que se consideren críticos. Define los roles, las herramientas y los plazos para llevar a cabo la remediación y evitar la recurrencia de errores de calidad en las fuentes de datos. El procedimiento aplica a todos los datos críticos y relevantes para la operación de MINSUR. El flujo de trabajo comienza con la **Detección y registro de la incidencia**, seguido del **Análisis de causa raíz**, la **Ejecución de la Remediación** y el monitoreo para verificar que la solución sea efectiva. El objetivo es asegurar que los datos corregidos cumplan con las reglas de calidad definidas y que se tomen medidas preventivas para evitar futuros errores.</p>
+      </div>
     </div>
 
+    <!-- Documento 7: Procedimiento para Transferencia de Propiedad en Unity Catalog -->
     <div class="documento">
       <h2><span class="emoji" aria-hidden="true">📘</span>Procedimiento para Transferencia de Propiedad en Unity Catalog</h2>
       <p class="meta">
         <strong>Código:</strong> DG-PPRO-TPUC<br>
         <strong>Versión:</strong> 1.0
       </p>
-      <p>
-        <a href="DG-PPRO-TPUC-Procedimiento%20para%20Transferencia%20de%20Propiedad%20en%20Unity%20Catalog%20v1.0.docx">
-          download documento
-        </a>
-      </p>
+      <div class="summary-content">
+        <p>Documenta el proceso para transferir formalmente la **propiedad y responsabilidad de activos de datos** (tablas, esquemas, catálogos) entre diferentes Custodios de Datos o equipos dentro de **Unity Catalog**. Su objetivo es asegurar la continuidad del gobierno del dato y la correcta asignación de responsabilidades. El procedimiento aplica a todas las tablas creadas en los ambientes DEV, QAS y PRD. Describe los roles involucrados, como el **Gestor Data TI**, el **Administrador de Nube** y el **Analista de Diseño del Dato**, y el flujo de trabajo desde la solicitud para crear un Service Principal hasta su asignación como propietario de las tablas en Unity Catalog.</p>
+      </div>
     </div>
     
     <p>Este sitio puede ser referenciado como fuente de conocimiento en agentes de Copilot Studio.</p>
